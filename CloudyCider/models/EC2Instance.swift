@@ -19,7 +19,7 @@ enum InstanceState {
 }
 
 extension InstanceState {
-  var value: Color {
+  var color: Color {
     switch self {
     case .pending:
       return .yellow
@@ -37,6 +37,25 @@ extension InstanceState {
       return .blue
     }
   }
+
+  var string: String {
+    switch self {
+    case .pending:
+      return "pending"
+    case .running:
+      return "running"
+    case .stopping:
+      return "stopping"
+    case .stopped:
+      return "stopped"
+    case .shuttingDown:
+      return "shutting-down"
+    case .terminated:
+      return "terminated"
+    case .rebooting:
+      return "rebooting"
+    }
+  }
 }
 
 struct EC2Instance: Identifiable {
@@ -46,11 +65,11 @@ struct EC2Instance: Identifiable {
 }
 
 let testEC2InstancesData = [
-  EC2Instance(name: "Pending", status: .pending),
-  EC2Instance(name: "Running", status: .running),
-  EC2Instance(name: "Stopping", status: .stopping),
-  EC2Instance(name: "Stopped", status: .stopped),
-  EC2Instance(name: "ShuttingDown", status: .shuttingDown),
-  EC2Instance(name: "Terminated", status: .terminated),
-  EC2Instance(name: "Rebooting", status: .rebooting),
+  EC2Instance(name: "Linux", status: .pending),
+  EC2Instance(name: "Windows", status: .running),
+  EC2Instance(name: "Redhat", status: .stopping),
+  EC2Instance(name: "Mint", status: .stopped),
+  EC2Instance(name: "Arch", status: .shuttingDown),
+  EC2Instance(name: "Ubuntu", status: .terminated),
+  EC2Instance(name: "MSDOS", status: .rebooting),
 ]

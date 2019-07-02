@@ -42,8 +42,8 @@ struct DesctopView: View {
     List(instances) { instance in
       VStack(alignment: .leading) {
         Text(instance.name)
-        Text("status")
-          .color(instance.status.value)
+        Text(instance.status.string)
+          .color(instance.status.color)
       }
     }
   }

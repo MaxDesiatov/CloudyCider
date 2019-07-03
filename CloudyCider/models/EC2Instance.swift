@@ -6,7 +6,74 @@
 //  Copyright © 2019 Matvii Hodovaniuk. All rights reserved.
 //
 
+import Combine
+import EC2
 import SwiftUI
+
+final class ECStore: BindableObject {
+  public let didChange = PassthroughSubject<(), Never>()
+  public var instances = testEC2InstancesData {
+    didSet {
+      DispatchQueue.main.async {
+        self.didChange.send()
+      }
+    }
+  }
+
+  public func updateInstances() {
+    instances = []
+  }
+}
+
+class EC2Listener {
+  var currentPage: Int = 1 {
+    didSet {
+      loadPage()
+    }
+  }
+
+  func loadPage() {}
+}
+
+final class EC2PageListener: EC2Listener {
+  func loadPage(store: ECStore) {
+    // MARK: - EC2Init
+
+    let accessKeyId = "AKIA2VSQ64GBSMZGGL4Y"
+    let secretAccessKey = "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"
+    let ec2 = EC2(accessKeyId: accessKeyId, secretAccessKey: secretAccessKey)
+    do {
+      try ec2.describeInstances(EC2.DescribeInstancesRequest()).whenSuccess { response in
+        do {
+          guard let instances = response.reservations?.first?.instances else { return }
+          for instance in instances {
+            print(instance.keyName!)
+          }
+          store.updateInstances()
+        }
+      }
+    } catch {
+      print(error)
+    }
+  }
+}
+
+struct EC2List: View {
+  @EnvironmentObject var store: ECStore
+  @State var pageListener = EC2PageListener()
+
+  var body: some View {
+    List(store.instances) { instance in
+      VStack(alignment: .leading) {
+        Text(instance.name)
+        Text(instance.status.string)
+          .color(instance.status.color)
+      }
+    }.onAppear {
+      self.pageListener.loadPage(store: self.store)
+    }
+  }
+}
 
 enum InstanceState {
   case pending

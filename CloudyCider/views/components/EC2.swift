@@ -6,8 +6,8 @@
 //  Copyright © 2019 Matvii Hodovaniuk. All rights reserved.
 //
 
+import EC2
 import SwiftUI
-// import SwiftUIFlux
 
 // MARK: - Shared View
 
@@ -35,16 +35,7 @@ struct MobileView: View {
 // MARK: - MacOS implementation
 
 struct DesctopView: View {
-//    var instances: [EC2Instance] = []
-  let instances = testEC2InstancesData
-
   var body: some View {
-    List(instances) { instance in
-      VStack(alignment: .leading) {
-        Text(instance.name)
-        Text(instance.status.string)
-          .color(instance.status.color)
-      }
-    }
+    EC2List()
   }
 }

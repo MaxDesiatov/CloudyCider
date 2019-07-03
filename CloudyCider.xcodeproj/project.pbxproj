@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E82017AD22CA65F9000F381C /* EC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AC22CA65F9000F381C /* EC2.swift */; };
 		E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AF22CB1FA4000F381C /* EC2Instance.swift */; };
+		E82017B322CB3573000F381C /* EC2 in Frameworks */ = {isa = PBXBuildFile; productRef = E82017B222CB3573000F381C /* EC2 */; };
 		E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3922CA5BBC007732F0 /* AppDelegate.swift */; };
 		E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3B22CA5BBC007732F0 /* SceneDelegate.swift */; };
 		E8614F3E22CA5BBC007732F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3D22CA5BBC007732F0 /* ContentView.swift */; };
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82017B322CB3573000F381C /* EC2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +186,9 @@
 			dependencies = (
 			);
 			name = CloudyCider;
+			packageProductDependencies = (
+				E82017B222CB3573000F381C /* EC2 */,
+			);
 			productName = CloudyCider;
 			productReference = E8614F3622CA5BBC007732F0 /* CloudyCider.app */;
 			productType = "com.apple.product-type.application";
@@ -256,6 +261,9 @@
 				Base,
 			);
 			mainGroup = E8614F2D22CA5BBC007732F0;
+			packageReferences = (
+				E82017B122CB3573000F381C /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */,
+			);
 			productRefGroup = E8614F3722CA5BBC007732F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -632,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E82017B122CB3573000F381C /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-aws/aws-sdk-appleos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E82017B222CB3573000F381C /* EC2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E82017B122CB3573000F381C /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */;
+			productName = EC2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8614F2E22CA5BBC007732F0 /* Project object */;
 }

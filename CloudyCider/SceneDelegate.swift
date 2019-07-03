@@ -17,36 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
-    // Use a UIHostingController as window root view controller
-//        if let windowScene = scene as? UIWindowScene {
-//            let window = UIWindow(windowScene: windowScene)
-//            window.rootViewController = UIHostingController(rootView: ContentView())
-//            self.window = window
-//            window.makeKeyAndVisible()
-//        }
     #if targetEnvironment(UIKitForMac)
     let windowScene = UIWindowScene(session: session, connectionOptions: connectionOptions)
     let window = UIWindow(windowScene: windowScene)
     #else
     let window = UIWindow(frame: UIScreen.main.bounds)
     #endif
-//
-//        UINavigationBar.appearance().largeTitleTextAttributes = [
-//            NSAttributedString.Key.foregroundColor: UIColor(.red)!,
-//            NSAttributedString.Key.font: UIFont(name: "FjallaOne-Regular", size: 40)!]
-//
-//        UINavigationBar.appearance().titleTextAttributes = [
-//            NSAttributedString.Key.foregroundColor: UIColor(named: "steam_gold")!,
-//            NSAttributedString.Key.font: UIFont(name: "FjallaOne-Regular", size: 18)!]
-//
-//        UIBarButtonItem.appearance().setTitleTextAttributes([
-//            NSAttributedString.Key.foregroundColor: UIColor(named: "steam_gold")!,
-//            NSAttributedString.Key.font: UIFont(name: "FjallaOne-Regular", size: 16)!],
-//                                                            for: .normal)
-//
-    let controller = UIHostingController(rootView: HomeView())
+    let ecStore = ECStore()
+    let controller = UIHostingController(rootView: HomeView().environmentObject(ecStore))
     window.rootViewController = controller
-    window.tintColor = UIColor(named: "steam_gold")
     self.window = window
     window.makeKeyAndVisible()
   }

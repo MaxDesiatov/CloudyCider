@@ -41,18 +41,33 @@ final class EC2PageListener: EC2Listener {
 
     let accessKeyId = "AKIA2VSQ64GBSMZGGL4Y"
     let secretAccessKey = "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"
-    let ec2 = EC2(accessKeyId: accessKeyId, secretAccessKey: secretAccessKey)
+    let ec2 = EC2(
+        accessKeyId: accessKeyId,
+        secretAccessKey: secretAccessKey,
+//        region: .useast1
+        region: .euwest2
+    )
+    let instanceRequest = EC2.DescribeInstancesRequest()
     do {
-      try ec2.describeInstances(EC2.DescribeInstancesRequest()).whenSuccess { response in
+      try ec2.describeInstances(instanceRequest).whenComplete { response in
         do {
-          guard let instances = response.reservations?.first?.instances else { return }
-          for instance in instances {
-            print(instance.keyName!)
-          }
-          store.updateInstances()
+  
+            print(response)
+//            guard let instances = response.get().reservations else {
+//                print("No instances")
+//                return
+//            }
+//
+//            for instance in instances {
+//                print(instance)
+//            }
+        } catch {
+            print(error)
+        }
+
         }
       }
-    } catch {
+    catch {
       print(error)
     }
   }
@@ -140,3 +155,4 @@ let testEC2InstancesData = [
   EC2Instance(name: "Ubuntu", status: .terminated),
   EC2Instance(name: "MSDOS", status: .rebooting),
 ]
+

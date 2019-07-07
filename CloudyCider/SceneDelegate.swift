@@ -23,8 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     #else
     let window = UIWindow(frame: UIScreen.main.bounds)
     #endif
-    let ecStore = ECStore()
-    let controller = UIHostingController(rootView: HomeView().environmentObject(ecStore))
+    let ec2Store = EC2Store()
+    let controller = UIHostingController(rootView: HomeView().environmentObject(ec2Store))
     window.rootViewController = controller
     self.window = window
     window.makeKeyAndVisible()

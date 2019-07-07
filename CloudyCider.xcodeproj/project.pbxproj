@@ -17,7 +17,12 @@
 		E8614F4622CA5BBD007732F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8614F4422CA5BBD007732F0 /* LaunchScreen.storyboard */; };
 		E8614F5122CA5BBD007732F0 /* CloudyCiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F5022CA5BBD007732F0 /* CloudyCiderTests.swift */; };
 		E8614F5C22CA5BBD007732F0 /* CloudyCiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F5B22CA5BBD007732F0 /* CloudyCiderUITests.swift */; };
-		E8B0A3EF22CFC9E70074E470 /* EC2 in Frameworks */ = {isa = PBXBuildFile; productRef = E8B0A3EE22CFC9E70074E470 /* EC2 */; };
+		E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C522D2081B000B1BD5 /* EC2List.swift */; };
+		E8B287C822D20937000B1BD5 /* InstanceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C722D20937000B1BD5 /* InstanceState.swift */; };
+		E8B287CA22D20963000B1BD5 /* EC2PageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C922D20963000B1BD5 /* EC2PageListener.swift */; };
+		E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CB22D209B7000B1BD5 /* EC2Store.swift */; };
+		E8B287CE22D209D3000B1BD5 /* EC2Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */; };
+		E8EA9A3D22CFD0F0000CEE5E /* EC2 in Frameworks */ = {isa = PBXBuildFile; productRef = E8EA9A3C22CFD0F0000CEE5E /* EC2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		E8614F5B22CA5BBD007732F0 /* CloudyCiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyCiderUITests.swift; sourceTree = "<group>"; };
 		E8614F5D22CA5BBD007732F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8614F6922CA5BD4007732F0 /* CloudyCider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudyCider.entitlements; sourceTree = "<group>"; };
+		E8B287C522D2081B000B1BD5 /* EC2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2List.swift; sourceTree = "<group>"; };
+		E8B287C722D20937000B1BD5 /* InstanceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceState.swift; sourceTree = "<group>"; };
+		E8B287C922D20963000B1BD5 /* EC2PageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2PageListener.swift; sourceTree = "<group>"; };
+		E8B287CB22D209B7000B1BD5 /* EC2Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Store.swift; sourceTree = "<group>"; };
+		E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Listener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B0A3EF22CFC9E70074E470 /* EC2 in Frameworks */,
+				E8EA9A3D22CFD0F0000CEE5E /* EC2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +104,7 @@
 		E82017AB22CA65DD000F381C /* components */ = {
 			isa = PBXGroup;
 			children = (
-				E82017AC22CA65F9000F381C /* EC2.swift */,
+				E8B287C422D20800000B1BD5 /* EC2 */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -103,6 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				E82017AF22CB1FA4000F381C /* EC2Instance.swift */,
+				E8B287C722D20937000B1BD5 /* InstanceState.swift */,
+				E8B287C922D20963000B1BD5 /* EC2PageListener.swift */,
+				E8B287CB22D209B7000B1BD5 /* EC2Store.swift */,
+				E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -170,6 +184,15 @@
 			path = CloudyCiderUITests;
 			sourceTree = "<group>";
 		};
+		E8B287C422D20800000B1BD5 /* EC2 */ = {
+			isa = PBXGroup;
+			children = (
+				E82017AC22CA65F9000F381C /* EC2.swift */,
+				E8B287C522D2081B000B1BD5 /* EC2List.swift */,
+			);
+			path = EC2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,7 +210,7 @@
 			);
 			name = CloudyCider;
 			packageProductDependencies = (
-				E8B0A3EE22CFC9E70074E470 /* EC2 */,
+				E8EA9A3C22CFD0F0000CEE5E /* EC2 */,
 			);
 			productName = CloudyCider;
 			productReference = E8614F3622CA5BBC007732F0 /* CloudyCider.app */;
@@ -262,7 +285,7 @@
 			);
 			mainGroup = E8614F2D22CA5BBC007732F0;
 			packageReferences = (
-				E8B0A3ED22CFC9E70074E470 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
+				E8EA9A3B22CFD0F0000CEE5E /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */,
 			);
 			productRefGroup = E8614F3722CA5BBC007732F0 /* Products */;
 			projectDirPath = "";
@@ -307,9 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */,
 				E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */,
+				E8B287CE22D209D3000B1BD5 /* EC2Listener.swift in Sources */,
 				E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */,
+				E8B287C822D20937000B1BD5 /* InstanceState.swift in Sources */,
 				E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */,
+				E8B287CA22D20963000B1BD5 /* EC2PageListener.swift in Sources */,
+				E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */,
 				E82017AD22CA65F9000F381C /* EC2.swift in Sources */,
 				E8614F3E22CA5BBC007732F0 /* ContentView.swift in Sources */,
 			);
@@ -642,20 +670,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E8B0A3ED22CFC9E70074E470 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+		E8EA9A3B22CFD0F0000CEE5E /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hodovani/aws-sdk-swift.git";
+			repositoryURL = "https://github.com/swift-aws/aws-sdk-appleos";
 			requirement = {
-				branch = "platform-values-decode";
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E8B0A3EE22CFC9E70074E470 /* EC2 */ = {
+		E8EA9A3C22CFD0F0000CEE5E /* EC2 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8B0A3ED22CFC9E70074E470 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			package = E8EA9A3B22CFD0F0000CEE5E /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */;
 			productName = EC2;
 		};
 /* End XCSwiftPackageProductDependency section */

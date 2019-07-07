@@ -2,21 +2,21 @@
   "object": {
     "pins": [
       {
-        "package": "AWSSDKSwift",
-        "repositoryURL": "https://github.com/hodovani/aws-sdk-swift.git",
+        "package": "AWSSDKAppleOS",
+        "repositoryURL": "https://github.com/swift-aws/aws-sdk-appleos",
         "state": {
-          "branch": "platform-values-decode",
-          "revision": "c20ed2e497260d8c92d80a06afc465b3cb697f34",
-          "version": null
+          "branch": null,
+          "revision": "2ec19d549e18b84cac9e4626ce32da881bc4f5f1",
+          "version": "0.3.0"
         }
       },
       {
         "package": "AWSSDKSwiftCore",
-        "repositoryURL": "https://github.com/swift-aws/aws-sdk-swift-core.git",
+        "repositoryURL": "https://github.com/swift-aws/aws-sdk-appleos-core.git",
         "state": {
-          "branch": "master",
-          "revision": "b2e19bac7d25be8d259e62e1a7d0a89acba550f5",
-          "version": null
+          "branch": null,
+          "revision": "97c92d66001e01b968e49d5e3dfdd4bbab75844a",
+          "version": "0.2.1"
         }
       },
       {
@@ -42,44 +42,17 @@
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
           "branch": null,
-          "revision": "ba7970fe396e8198b84c6c1b44b38a1d4e2eb6bd",
-          "version": "1.14.1"
+          "revision": "7f20464df31e85f86bedf4a8afdd1785e0cb5059",
+          "version": "2.3.0"
         }
       },
       {
-        "package": "swift-nio-ssl",
-        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "package": "swift-nio-transport-services",
+        "repositoryURL": "https://github.com/apple/swift-nio-transport-services.git",
         "state": {
           "branch": null,
-          "revision": "0f3999f3e3c359cc74480c292644c3419e44a12f",
-          "version": "1.4.0"
-        }
-      },
-      {
-        "package": "swift-nio-ssl-support",
-        "repositoryURL": "https://github.com/apple/swift-nio-ssl-support.git",
-        "state": {
-          "branch": null,
-          "revision": "c02eec4e0e6d351cd092938cf44195a8e669f555",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "swift-nio-zlib-support",
-        "repositoryURL": "https://github.com/apple/swift-nio-zlib-support.git",
-        "state": {
-          "branch": null,
-          "revision": "37760e9a52030bb9011972c5213c3350fa9d41fd",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "SwiftyJSON",
-        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
-        "state": {
-          "branch": null,
-          "revision": "2b6054efa051565954e1d2b9da831680026cd768",
-          "version": "4.3.0"
+          "revision": "d59370d89af5e647fa14779b693cb5378602aa6d",
+          "version": "1.0.3"
         }
       }
     ]

@@ -11,7 +11,6 @@
 		E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AF22CB1FA4000F381C /* EC2Instance.swift */; };
 		E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3922CA5BBC007732F0 /* AppDelegate.swift */; };
 		E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3B22CA5BBC007732F0 /* SceneDelegate.swift */; };
-		E8614F3E22CA5BBC007732F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3D22CA5BBC007732F0 /* ContentView.swift */; };
 		E8614F4022CA5BBD007732F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8614F3F22CA5BBD007732F0 /* Assets.xcassets */; };
 		E8614F4322CA5BBD007732F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8614F4222CA5BBD007732F0 /* Preview Assets.xcassets */; };
 		E8614F4622CA5BBD007732F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8614F4422CA5BBD007732F0 /* LaunchScreen.storyboard */; };
@@ -48,7 +47,6 @@
 		E8614F3622CA5BBC007732F0 /* CloudyCider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudyCider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8614F3922CA5BBC007732F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8614F3B22CA5BBC007732F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8614F3D22CA5BBC007732F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E8614F3F22CA5BBD007732F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8614F4222CA5BBD007732F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8614F4522CA5BBD007732F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				E8614F6922CA5BD4007732F0 /* CloudyCider.entitlements */,
 				E8614F3922CA5BBC007732F0 /* AppDelegate.swift */,
 				E8614F3B22CA5BBC007732F0 /* SceneDelegate.swift */,
-				E8614F3D22CA5BBC007732F0 /* ContentView.swift */,
 				E8614F3F22CA5BBD007732F0 /* Assets.xcassets */,
 				E8614F4422CA5BBD007732F0 /* LaunchScreen.storyboard */,
 				E8614F4722CA5BBD007732F0 /* Info.plist */,
@@ -339,7 +336,6 @@
 				E8B287CA22D20963000B1BD5 /* EC2PageListener.swift in Sources */,
 				E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */,
 				E82017AD22CA65F9000F381C /* EC2.swift in Sources */,
-				E8614F3E22CA5BBC007732F0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

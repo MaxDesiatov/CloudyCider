@@ -7,11 +7,11 @@
 //
 
 class EC2Listener {
-    var currentPage: Int = 1 {
-        didSet {
-            loadPage()
-        }
+  var currentPage: Int = 1 {
+    didSet {
+      loadPage()
     }
-    
-    func loadPage() {}
+  }
+
+  func loadPage() {}
 }

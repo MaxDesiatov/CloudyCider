@@ -9,25 +9,26 @@
 import SwiftUI
 
 struct EC2List: View {
-    @EnvironmentObject var store: EC2Store
-    @State var pageListener = EC2PageListener()
-    
-    var body: some View {
-        HStack() {
-            if store.instances.isEmpty {
-                Text("There are no instance on EC2. Try to create at least one.")
-            } else {
-                List(store.instances) { instance in
-                    VStack(alignment: .leading) {
-                        Text(instance.name)
-                        Text(instance.status.string)
-                            .color(instance.status.color)
-                    }
-                }
-            }
-            }.onAppear {
-                self.pageListener.loadPage(store: self.store)
-        }
-    }
-}
+  @EnvironmentObject var store: EC2Store
+  @State var pageListener = EC2PageListener()
 
+  var body: some View {
+    HStack {
+      if !store.errorMessage.isEmpty {
+        Text("There are error on the EC2. \(store.errorMessage)").color(.red).lineLimit(nil)
+      } else if store.instances.isEmpty {
+        Text("There are no instance on the EC2. Try to create at least one.")
+      } else {
+        List(store.instances) { instance in
+          VStack(alignment: .leading) {
+            Text(instance.name)
+            Text(instance.status.string)
+              .color(instance.status.color)
+          }
+        }
+      }
+    }.onAppear {
+      self.pageListener.loadPage(store: self.store)
+    }
+  }
+}

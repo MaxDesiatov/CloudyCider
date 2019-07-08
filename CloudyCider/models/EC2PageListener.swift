@@ -8,13 +8,14 @@
 
 import AWSSDKSwiftCore
 import EC2
+import Foundation
 
 final class EC2PageListener: EC2Listener {
   func loadPage(store: EC2Store) {
     // MARK: - EC2Init
-
-    let accessKeyId = "AKIA2VSQ64GBT4WX"
-    let secretAccessKey = "T7gF1JsjR+LUuNpxaNcTGgMmCNRxA3RP/9hhO6fk"
+    
+    let accessKeyId = ProcessInfo.processInfo.environment["accessKeyId"]
+    let secretAccessKey = ProcessInfo.processInfo.environment["secretAccessKey"]
     let ec2 = EC2(
       accessKeyId: accessKeyId,
       secretAccessKey: secretAccessKey,

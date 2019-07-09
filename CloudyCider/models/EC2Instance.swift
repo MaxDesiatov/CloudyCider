@@ -6,8 +6,6 @@
 //  Copyright © 2019 Matvii Hodovaniuk. All rights reserved.
 //
 
-import Combine
-import EC2
 import SwiftUI
 
 struct EC2Instance: Identifiable {

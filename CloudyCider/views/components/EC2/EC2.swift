@@ -6,7 +6,6 @@
 //  Copyright © 2019 Matvii Hodovaniuk. All rights reserved.
 //
 
-import EC2
 import SwiftUI
 
 // MARK: - Shared View

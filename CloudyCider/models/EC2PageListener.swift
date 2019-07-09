@@ -49,7 +49,7 @@ final class EC2PageListener: EC2Listener {
               nextStoreInstances.append(instanceInformation)
             }
           }
-          // replace old instances list with the new one
+          // replace old instances stored in store with with the new one fetched from aws
           store.instances = nextStoreInstances
         } catch let error as AWSError {
           store.errorMessage = error.rawBody

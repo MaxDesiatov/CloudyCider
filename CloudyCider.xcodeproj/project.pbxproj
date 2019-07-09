@@ -20,7 +20,7 @@
 		E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C722D20937000B1BD5 /* InstanceStateName.swift */; };
 		E8B287CA22D20963000B1BD5 /* EC2PageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C922D20963000B1BD5 /* EC2PageListener.swift */; };
 		E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CB22D209B7000B1BD5 /* EC2Store.swift */; };
-		E8B287CE22D209D3000B1BD5 /* EC2Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */; };
+		E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */; };
 		E8EA9A3D22CFD0F0000CEE5E /* EC2 in Frameworks */ = {isa = PBXBuildFile; productRef = E8EA9A3C22CFD0F0000CEE5E /* EC2 */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,7 @@
 		E8B287C722D20937000B1BD5 /* InstanceStateName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceStateName.swift; sourceTree = "<group>"; };
 		E8B287C922D20963000B1BD5 /* EC2PageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2PageListener.swift; sourceTree = "<group>"; };
 		E8B287CB22D209B7000B1BD5 /* EC2Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Store.swift; sourceTree = "<group>"; };
-		E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Listener.swift; sourceTree = "<group>"; };
+		E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				E8B287C422D20800000B1BD5 /* EC2 */,
+				E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -114,7 +115,6 @@
 				E8B287C722D20937000B1BD5 /* InstanceStateName.swift */,
 				E8B287C922D20963000B1BD5 /* EC2PageListener.swift */,
 				E8B287CB22D209B7000B1BD5 /* EC2Store.swift */,
-				E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -329,12 +329,12 @@
 			files = (
 				E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */,
 				E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */,
-				E8B287CE22D209D3000B1BD5 /* EC2Listener.swift in Sources */,
 				E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */,
 				E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */,
 				E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */,
 				E8B287CA22D20963000B1BD5 /* EC2PageListener.swift in Sources */,
 				E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */,
+				E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */,
 				E82017AD22CA65F9000F381C /* EC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

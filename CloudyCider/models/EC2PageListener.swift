@@ -10,7 +10,7 @@ import AWSSDKSwiftCore
 import EC2
 import Foundation
 
-final class EC2PageListener: EC2Listener {
+final class EC2PageListener {
   func loadPage(store: EC2Store) {
     // MARK: - EC2Init
 
@@ -35,12 +35,10 @@ final class EC2PageListener: EC2Listener {
             guard let instances = reservation.instances else { return }
 
             for instance in instances {
-              // get the instance state
+              // get the instance state and the instance name
               guard let state = instance.state,
-                let statusName = state.name else { return }
-
-              // get the instance name
-              guard let tags = instance.tags,
+                let statusName = state.name,
+                let tags = instance.tags,
                 let nameTag = tags.filter({ $0.key == "Name" }).first,
                 let name = nameTag.value else { return }
 

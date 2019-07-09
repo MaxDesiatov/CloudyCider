@@ -8,31 +8,54 @@
 
 import SwiftUI
 
-struct EC2InstanceView: View {
-  @ObjectBinding var instance: EC2Instance
+extension View {
+  /// Returns a type-erased version of the view.
+  public var typeErased: AnyView { AnyView(self) }
+}
+
+struct EC2Screen: View {
+  @ObjectBinding var store: EC2Store
+  var pageListener = EC2PageListener()
 
   var body: some View {
-    Text(instance.name)
-    Text(instance.status.description)
-      .color(instance.status.color)
+    EC2List(result: store.result).onAppear {
+      self.pageListener.loadPage(store: self.store)
+    }
   }
 }
 
-struct EC2List: View {
-  @ObjectBinding var store: EC2Store
-  @State var pageListener = EC2PageListener()
+// VStack -> List or ForEach
+
+struct EC2InstanceView: View {
+  let instance: EC2Instance
 
   var body: some View {
-    HStack {
-      store.errorMessage.map { error in
-        Text("There is an error on the EC2. \(error)")
-      } ?? store.instances.map { (instance: EC2Instance) -> EC2InstanceView in
-        EC2InstanceView(instance)
-      } ?? {
-        Text("There are no instances on the EC2. Try to create at least one.")
-      }
-    }.onAppear {
-      self.pageListener.loadPage(store: self.store)
+    VStack {
+      Text(instance.name)
+      Text(instance.status.description).color(instance.status.color)
+    }
+  }
+}
+
+private struct EC2List: View {
+  let result: Result<[EC2Instance], Error>
+
+  var body: some View {
+    switch result {
+    case let .failure(e):
+      return AnyView(ErrorView(error: e))
+    case let .success(instances) where instances.isEmpty:
+      return AnyView(Text("There are no instances on the EC2. Try to create at least one."))
+    case let .success(instances):
+      return AnyView(List {
+        ForEach(instances) { instance in
+          VStack(alignment: .leading) {
+            Text(instance.name)
+            Text(instance.status.description)
+              .color(instance.status.color)
+          }
+        }
+      })
     }
   }
 }

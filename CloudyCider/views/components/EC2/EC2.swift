@@ -35,6 +35,6 @@ struct MobileView: View {
 
 struct DesktopView: View {
   var body: some View {
-    EC2List(store: EC2Store())
+    EC2Screen(store: EC2Store())
   }
 }

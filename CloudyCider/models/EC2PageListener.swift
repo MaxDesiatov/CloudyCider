@@ -28,28 +28,28 @@ final class EC2PageListener: EC2Listener {
           let result = try response.get()
           guard let reservations = result.reservations else { return }
 
-          // create temp storage for instances list
+          // create temp storage for the instances list
           var nextStoreInstances: [EC2Instance] = []
 
           for reservation in reservations {
             guard let instances = reservation.instances else { return }
 
             for instance in instances {
-              // get instance state
+              // get the instance state
               guard let state = instance.state,
                 let statusName = state.name else { return }
 
-              // get instance name
+              // get the instance name
               guard let tags = instance.tags else { return }
               let nameTag = tags.filter { $0.key == "Name" }[0]
               guard let name = nameTag.value else { return }
 
-              // add new instance information to list
+              // add new instance information to the list
               let instanceInformation = EC2Instance(name: name, status: statusName)
               nextStoreInstances.append(instanceInformation)
             }
           }
-          // replace old instances list with new
+          // replace old instances list with the new one
           store.instances = nextStoreInstances
         } catch let error as AWSError {
           store.errorMessage = error.rawBody

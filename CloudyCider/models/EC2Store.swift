@@ -12,7 +12,7 @@ import SwiftUI
 final class EC2Store: BindableObject {
   public let didChange = PassthroughSubject<(), Never>()
 
-  public var errorMessage: String = "" {
+  public var errorMessage: String? {
     didSet {
       DispatchQueue.main.async {
         self.didChange.send()

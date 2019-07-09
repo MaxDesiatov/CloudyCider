@@ -21,9 +21,9 @@ final class EC2PageListener: EC2Listener {
       secretAccessKey: secretAccessKey,
       region: .euwest2
     )
-    let instanceRequest = EC2.DescribeInstancesRequest()
+    let instancesRequest = EC2.DescribeInstancesRequest()
     do {
-      try ec2.describeInstances(instanceRequest).whenComplete { response in
+      try ec2.describeInstances(instancesRequest).whenComplete { response in
         do {
           let result = try response.get()
           guard let reservations = result.reservations else { return }

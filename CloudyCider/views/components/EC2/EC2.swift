@@ -13,7 +13,7 @@ import SwiftUI
 struct HomeView: View {
   #if targetEnvironment(UIKitForMac)
   var body: some View {
-    DesctopView()
+    DesktopView()
   }
 
   #else
@@ -33,7 +33,7 @@ struct MobileView: View {
 
 // MARK: - MacOS implementation
 
-struct DesctopView: View {
+struct DesktopView: View {
   var body: some View {
     EC2List(store: EC2Store())
   }

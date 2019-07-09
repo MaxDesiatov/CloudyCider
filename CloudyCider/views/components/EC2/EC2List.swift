@@ -15,9 +15,9 @@ struct EC2List: View {
   var body: some View {
     HStack {
       if !store.errorMessage.isEmpty {
-        Text("There are error on the EC2. \(store.errorMessage)").color(.red).lineLimit(nil)
+        Text("There is an error on the EC2. \(store.errorMessage)").color(.red).lineLimit(nil)
       } else if store.instances.isEmpty {
-        Text("There are no instance on the EC2. Try to create at least one.")
+        Text("There are no instances on the EC2. Try to create at least one.")
       } else {
         List(store.instances) { instance in
           VStack(alignment: .leading) {

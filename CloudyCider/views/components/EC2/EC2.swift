@@ -35,6 +35,6 @@ struct MobileView: View {
 
 struct DesctopView: View {
   var body: some View {
-    EC2List()
+    EC2List(store: EC2Store())
   }
 }

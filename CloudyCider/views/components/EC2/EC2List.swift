@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct EC2List: View {
-  @EnvironmentObject var store: EC2Store
+  @ObjectBinding var store: EC2Store
   @State var pageListener = EC2PageListener()
 
   var body: some View {

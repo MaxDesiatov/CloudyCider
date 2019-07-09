@@ -22,7 +22,7 @@ struct EC2List: View {
         List(store.instances) { instance in
           VStack(alignment: .leading) {
             Text(instance.name)
-            Text(instance.status.string)
+            Text(instance.status.description)
               .color(instance.status.color)
           }
         }

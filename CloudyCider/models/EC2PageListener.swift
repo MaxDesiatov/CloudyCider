@@ -13,7 +13,7 @@ import Foundation
 final class EC2PageListener: EC2Listener {
   func loadPage(store: EC2Store) {
     // MARK: - EC2Init
-    
+
     let accessKeyId = ProcessInfo.processInfo.environment["accessKeyId"]
     let secretAccessKey = ProcessInfo.processInfo.environment["secretAccessKey"]
     let ec2 = EC2(
@@ -37,7 +37,7 @@ final class EC2PageListener: EC2Listener {
             for instance in instances {
               // get instance state
               guard let state = instance.state,
-                let status = state.code else { return }
+                let statusName = state.name else { return }
 
               // get instance name
               guard let tags = instance.tags else { return }
@@ -45,7 +45,7 @@ final class EC2PageListener: EC2Listener {
               guard let name = nameTag.value else { return }
 
               // add new instance information to list
-              let instanceInformation = EC2Instance(name: name, status: InstanceState(status))
+              let instanceInformation = EC2Instance(name: name, status: statusName)
               nextStoreInstances.append(instanceInformation)
             }
           }

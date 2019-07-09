@@ -17,7 +17,7 @@
 		E8614F5122CA5BBD007732F0 /* CloudyCiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F5022CA5BBD007732F0 /* CloudyCiderTests.swift */; };
 		E8614F5C22CA5BBD007732F0 /* CloudyCiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F5B22CA5BBD007732F0 /* CloudyCiderUITests.swift */; };
 		E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C522D2081B000B1BD5 /* EC2List.swift */; };
-		E8B287C822D20937000B1BD5 /* InstanceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C722D20937000B1BD5 /* InstanceState.swift */; };
+		E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C722D20937000B1BD5 /* InstanceStateName.swift */; };
 		E8B287CA22D20963000B1BD5 /* EC2PageListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C922D20963000B1BD5 /* EC2PageListener.swift */; };
 		E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CB22D209B7000B1BD5 /* EC2Store.swift */; };
 		E8B287CE22D209D3000B1BD5 /* EC2Listener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */; };
@@ -59,7 +59,7 @@
 		E8614F5D22CA5BBD007732F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8614F6922CA5BD4007732F0 /* CloudyCider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudyCider.entitlements; sourceTree = "<group>"; };
 		E8B287C522D2081B000B1BD5 /* EC2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2List.swift; sourceTree = "<group>"; };
-		E8B287C722D20937000B1BD5 /* InstanceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceState.swift; sourceTree = "<group>"; };
+		E8B287C722D20937000B1BD5 /* InstanceStateName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceStateName.swift; sourceTree = "<group>"; };
 		E8B287C922D20963000B1BD5 /* EC2PageListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2PageListener.swift; sourceTree = "<group>"; };
 		E8B287CB22D209B7000B1BD5 /* EC2Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Store.swift; sourceTree = "<group>"; };
 		E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Listener.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				E82017AF22CB1FA4000F381C /* EC2Instance.swift */,
-				E8B287C722D20937000B1BD5 /* InstanceState.swift */,
+				E8B287C722D20937000B1BD5 /* InstanceStateName.swift */,
 				E8B287C922D20963000B1BD5 /* EC2PageListener.swift */,
 				E8B287CB22D209B7000B1BD5 /* EC2Store.swift */,
 				E8B287CD22D209D3000B1BD5 /* EC2Listener.swift */,
@@ -331,7 +331,7 @@
 				E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */,
 				E8B287CE22D209D3000B1BD5 /* EC2Listener.swift in Sources */,
 				E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */,
-				E8B287C822D20937000B1BD5 /* InstanceState.swift in Sources */,
+				E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */,
 				E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */,
 				E8B287CA22D20963000B1BD5 /* EC2PageListener.swift in Sources */,
 				E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */,

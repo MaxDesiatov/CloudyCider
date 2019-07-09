@@ -40,9 +40,9 @@ final class EC2PageListener: EC2Listener {
                 let statusName = state.name else { return }
 
               // get the instance name
-              guard let tags = instance.tags else { return }
-              let nameTag = tags.filter { $0.key == "Name" }[0]
-              guard let name = nameTag.value else { return }
+              guard let tags = instance.tags,
+                let nameTag = tags.filter({ $0.key == "Name" }).first,
+                let name = nameTag.value else { return }
 
               // add new instance information to the list
               let instanceInformation = EC2Instance(name: name, status: statusName)

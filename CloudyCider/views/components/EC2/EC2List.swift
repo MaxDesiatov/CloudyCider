@@ -24,8 +24,6 @@ struct EC2Screen: View {
   }
 }
 
-// VStack -> List or ForEach
-
 struct EC2InstanceView: View {
   let instance: EC2Instance
 
@@ -43,11 +41,11 @@ private struct EC2List: View {
   var body: some View {
     switch result {
     case let .failure(e):
-      return AnyView(ErrorView(error: e))
+      return ErrorView(error: e).typeErased
     case let .success(instances) where instances.isEmpty:
-      return AnyView(Text("There are no instances on the EC2. Try to create at least one."))
+      return Text("There are no instances on the EC2. Try to create at least one.").typeErased
     case let .success(instances):
-      return AnyView(List {
+      return List {
         ForEach(instances) { instance in
           VStack(alignment: .leading) {
             Text(instance.name)
@@ -55,7 +53,7 @@ private struct EC2List: View {
               .color(instance.status.color)
           }
         }
-      })
+      }.typeErased
     }
   }
 }

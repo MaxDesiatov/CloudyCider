@@ -59,8 +59,6 @@ final class EC2Store: BindableObject {
           }
           // replace old instances stored in store with with the new one fetched from aws
           self.result = .success(nextStoreInstances)
-        } catch let error as AWSError {
-          self.result = .failure(error)
         } catch {
           print(error)
           self.result = .failure(error)

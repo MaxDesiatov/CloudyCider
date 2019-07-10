@@ -15,11 +15,10 @@ extension View {
 
 struct EC2Screen: View {
   @ObjectBinding var store: EC2Store
-  var pageListener = EC2PageListener()
 
   var body: some View {
     EC2List(result: store.result).onAppear {
-      self.pageListener.loadPage(store: self.store)
+      self.store.loadPage()
     }
   }
 }

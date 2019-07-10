@@ -93,31 +93,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E82017AA22CA65C1000F381C /* views */ = {
-			isa = PBXGroup;
-			children = (
-				E82017AB22CA65DD000F381C /* components */,
-			);
-			path = views;
-			sourceTree = "<group>";
-		};
-		E82017AB22CA65DD000F381C /* components */ = {
+		E82017AA22CA65C1000F381C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				E8B287C422D20800000B1BD5 /* EC2 */,
 				E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */,
 			);
-			path = components;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		E82017AE22CB1F7C000F381C /* models */ = {
+		E82017AE22CB1F7C000F381C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E82017AF22CB1FA4000F381C /* EC2Instance.swift */,
 				E8B287C722D20937000B1BD5 /* InstanceStateName.swift */,
 				E8B287CB22D209B7000B1BD5 /* EC2Store.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E8614F2D22CA5BBC007732F0 = {
@@ -143,8 +135,8 @@
 		E8614F3822CA5BBC007732F0 /* CloudyCider */ = {
 			isa = PBXGroup;
 			children = (
-				E82017AE22CB1F7C000F381C /* models */,
-				E82017AA22CA65C1000F381C /* views */,
+				E82017AE22CB1F7C000F381C /* Models */,
+				E82017AA22CA65C1000F381C /* Views */,
 				E8614F6922CA5BD4007732F0 /* CloudyCider.entitlements */,
 				E8614F3922CA5BBC007732F0 /* AppDelegate.swift */,
 				E8614F3B22CA5BBC007732F0 /* SceneDelegate.swift */,

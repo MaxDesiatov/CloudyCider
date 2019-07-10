@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct EC2Screen: View {
-    @ObjectBinding var store: EC2Store
-    
-    var body: some View {
-        EC2List(result: store.result).onAppear {
-            self.store.loadPage()
-        }
+  @ObjectBinding var store: EC2Store
+
+  var body: some View {
+    EC2List(result: store.result).onAppear {
+      self.store.loadPage()
     }
+  }
 }

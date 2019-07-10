@@ -9,12 +9,12 @@
 import SwiftUI
 
 struct EC2InstanceView: View {
-    let instance: EC2Instance
-    
-    var body: some View {
-        VStack {
-            Text(instance.name)
-            Text(instance.status.description).color(instance.status.color)
-        }
+  let instance: EC2Instance
+
+  var body: some View {
+    VStack {
+      Text(instance.name)
+      Text(instance.status.description).color(instance.status.color)
     }
+  }
 }

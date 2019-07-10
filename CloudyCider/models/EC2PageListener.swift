@@ -48,17 +48,17 @@ final class EC2PageListener {
             }
           }
           // replace old instances stored in store with with the new one fetched from aws
-          store.instances = nextStoreInstances
+          store.result = .success(nextStoreInstances)
         } catch let error as AWSError {
-          store.errorMessage = error.rawBody
+          store.result = .failure(error)
         } catch {
           print(error)
-          store.errorMessage = error.localizedDescription
+          store.result = .failure(error)
         }
       }
     } catch {
       print(error)
-      store.errorMessage = error.localizedDescription
+      store.result = .failure(error)
     }
   }
 }

@@ -10,9 +10,9 @@ import Combine
 import SwiftUI
 
 final class EC2Store: BindableObject {
-  public let didChange = PassthroughSubject<(), Never>()
+  let didChange = PassthroughSubject<(), Never>()
 
-  public var result: Result<[EC2Instance], Error> = .success([]) {
+  var result: Result<[EC2Instance], Error> = .success([]) {
     didSet {
       DispatchQueue.main.async {
         self.didChange.send()

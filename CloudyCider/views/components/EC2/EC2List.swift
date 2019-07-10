@@ -13,28 +13,7 @@ extension View {
   public var typeErased: AnyView { AnyView(self) }
 }
 
-struct EC2Screen: View {
-  @ObjectBinding var store: EC2Store
-
-  var body: some View {
-    EC2List(result: store.result).onAppear {
-      self.store.loadPage()
-    }
-  }
-}
-
-struct EC2InstanceView: View {
-  let instance: EC2Instance
-
-  var body: some View {
-    VStack {
-      Text(instance.name)
-      Text(instance.status.description).color(instance.status.color)
-    }
-  }
-}
-
-private struct EC2List: View {
+struct EC2List: View {
   let result: Result<[EC2Instance], Error>
 
   var body: some View {

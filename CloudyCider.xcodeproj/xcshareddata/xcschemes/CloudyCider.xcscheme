@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "9999"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CloudyCider::CloudyCider"
-               BuildableName = "CloudyCider"
+               BlueprintIdentifier = "E8614F3522CA5BBC007732F0"
+               BuildableName = "CloudyCider.app"
                BlueprintName = "CloudyCider"
                ReferencedContainer = "container:CloudyCider.xcodeproj">
             </BuildableReference>
@@ -32,15 +32,23 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CloudyCider::CloudyCiderTests"
+               BlueprintIdentifier = "E8614F4B22CA5BBD007732F0"
                BuildableName = "CloudyCiderTests.xctest"
                BlueprintName = "CloudyCiderTests"
                ReferencedContainer = "container:CloudyCider.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E8614F5622CA5BBD007732F0"
+               BuildableName = "CloudyCiderUITests.xctest"
+               BlueprintName = "CloudyCiderUITests"
+               ReferencedContainer = "container:CloudyCider.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -56,14 +64,24 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CloudyCider::CloudyCider"
-            BuildableName = "CloudyCider"
+            BlueprintIdentifier = "E8614F3522CA5BBC007732F0"
+            BuildableName = "CloudyCider.app"
             BlueprintName = "CloudyCider"
             ReferencedContainer = "container:CloudyCider.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "ec2SecretKey"
+            value = ""
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = ""
+            value = ""
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -71,6 +89,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E8614F3522CA5BBC007732F0"
+            BuildableName = "CloudyCider.app"
+            BlueprintName = "CloudyCider"
+            ReferencedContainer = "container:CloudyCider.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

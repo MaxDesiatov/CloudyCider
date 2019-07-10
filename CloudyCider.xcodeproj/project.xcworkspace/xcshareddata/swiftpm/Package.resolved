@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AWSSDKAppleOS",
+        "repositoryURL": "https://github.com/swift-aws/aws-sdk-appleos",
+        "state": {
+          "branch": null,
+          "revision": "2ec19d549e18b84cac9e4626ce32da881bc4f5f1",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "AWSSDKSwiftCore",
+        "repositoryURL": "https://github.com/swift-aws/aws-sdk-appleos-core.git",
+        "state": {
+          "branch": null,
+          "revision": "97c92d66001e01b968e49d5e3dfdd4bbab75844a",
+          "version": "0.2.1"
+        }
+      },
+      {
+        "package": "HypertextApplicationLanguage",
+        "repositoryURL": "https://github.com/Yasumoto/HypertextApplicationLanguage.git",
+        "state": {
+          "branch": null,
+          "revision": "2302002502fe573494577cc6e8df686e385519f8",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "INIParser",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-INIParser.git",
+        "state": {
+          "branch": null,
+          "revision": "0952aac9ca54324ff25191569fd9c48eec424772",
+          "version": "3.0.2"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "7f20464df31e85f86bedf4a8afdd1785e0cb5059",
+          "version": "2.3.0"
+        }
+      },
+      {
+        "package": "swift-nio-transport-services",
+        "repositoryURL": "https://github.com/apple/swift-nio-transport-services.git",
+        "state": {
+          "branch": null,
+          "revision": "d59370d89af5e647fa14779b693cb5378602aa6d",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

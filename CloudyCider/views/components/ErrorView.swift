@@ -22,5 +22,7 @@ struct ErrorView: View {
     }
 
     return Text("There is an error when attempting to request data from EC2: \(errorText)")
+        .color(.red)
+        .lineLimit(nil)
   }
 }

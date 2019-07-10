@@ -12,22 +12,6 @@ import SwiftUI
 final class EC2Store: BindableObject {
   public let didChange = PassthroughSubject<(), Never>()
 
-  public var errorMessage: String? {
-    didSet {
-      DispatchQueue.main.async {
-        self.didChange.send()
-      }
-    }
-  }
-
-  public var instances: [EC2Instance]? {
-    didSet {
-      DispatchQueue.main.async {
-        self.didChange.send()
-      }
-    }
-  }
-
   public var result: Result<[EC2Instance], Error> = .success([]) {
     didSet {
       DispatchQueue.main.async {

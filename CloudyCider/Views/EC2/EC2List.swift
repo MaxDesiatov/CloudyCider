@@ -8,11 +8,6 @@
 
 import SwiftUI
 
-extension View {
-  /// Returns a type-erased version of the view.
-  public var typeErased: AnyView { AnyView(self) }
-}
-
 struct EC2List: View {
   let result: Result<[EC2Instance], Error>
 

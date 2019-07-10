@@ -11,6 +11,7 @@
 		E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AF22CB1FA4000F381C /* EC2Instance.swift */; };
 		E836446922D619F50026D80C /* EC2Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836446822D619F50026D80C /* EC2Screen.swift */; };
 		E836446B22D61A1A0026D80C /* EC2InstanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836446A22D61A1A0026D80C /* EC2InstanceView.swift */; };
+		E836446E22D62D470026D80C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836446D22D62D470026D80C /* View.swift */; };
 		E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3922CA5BBC007732F0 /* AppDelegate.swift */; };
 		E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F3B22CA5BBC007732F0 /* SceneDelegate.swift */; };
 		E8614F4022CA5BBD007732F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8614F3F22CA5BBD007732F0 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		E82017AF22CB1FA4000F381C /* EC2Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Instance.swift; sourceTree = "<group>"; };
 		E836446822D619F50026D80C /* EC2Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Screen.swift; sourceTree = "<group>"; };
 		E836446A22D61A1A0026D80C /* EC2InstanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2InstanceView.swift; sourceTree = "<group>"; };
+		E836446D22D62D470026D80C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		E8614F3622CA5BBC007732F0 /* CloudyCider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudyCider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8614F3922CA5BBC007732F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8614F3B22CA5BBC007732F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E836446C22D62AFE0026D80C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E836446D22D62D470026D80C /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E8614F2D22CA5BBC007732F0 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		E8614F3822CA5BBC007732F0 /* CloudyCider */ = {
 			isa = PBXGroup;
 			children = (
+				E836446C22D62AFE0026D80C /* Extensions */,
 				E82017AE22CB1F7C000F381C /* Models */,
 				E82017AA22CA65C1000F381C /* Views */,
 				E8614F6922CA5BD4007732F0 /* CloudyCider.entitlements */,
@@ -331,6 +342,7 @@
 				E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */,
 				E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */,
 				E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */,
+				E836446E22D62D470026D80C /* View.swift in Sources */,
 				E82017AD22CA65F9000F381C /* EC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

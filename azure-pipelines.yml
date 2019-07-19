@@ -1,0 +1,9 @@
+trigger:
+  - master
+
+jobs:
+  - job: lint
+    pool:
+      vmImage: "macos-latest"
+    steps:
+      - bash: ./lint.sh

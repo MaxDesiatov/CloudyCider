@@ -1,8 +1,8 @@
 //
-//  EC2.swift
+//  HomeScreen.swift
 //  CloudyCider
 //
-//  Created by Matvii Hodovaniuk on 7/1/19.
+//  Created by Matvii Hodovaniuk on 7/23/19.
 //  Copyright © 2019 Matvii Hodovaniuk. All rights reserved.
 //
 
@@ -35,6 +35,7 @@ struct MobileView: View {
 
 struct DesktopView: View {
   var body: some View {
-    EC2Screen(store: EC2Store())
+//    EC2Screen(store: EC2Store())
+    SettingsScreen()
   }
 }

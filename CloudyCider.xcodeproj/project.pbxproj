@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E82017AD22CA65F9000F381C /* EC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AC22CA65F9000F381C /* EC2.swift */; };
 		E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AF22CB1FA4000F381C /* EC2Instance.swift */; };
 		E836446922D619F50026D80C /* EC2Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836446822D619F50026D80C /* EC2Screen.swift */; };
 		E836446B22D61A1A0026D80C /* EC2InstanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836446A22D61A1A0026D80C /* EC2InstanceView.swift */; };
@@ -22,6 +21,8 @@
 		E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C522D2081B000B1BD5 /* EC2List.swift */; };
 		E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C722D20937000B1BD5 /* InstanceStateName.swift */; };
 		E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CB22D209B7000B1BD5 /* EC2Store.swift */; };
+		E8BBC2F122E6CCF500891237 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */; };
+		E8BBC2F322E6CE4000891237 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BBC2F222E6CE4000891237 /* HomeView.swift */; };
 		E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */; };
 		E8EA9A3D22CFD0F0000CEE5E /* EC2 in Frameworks */ = {isa = PBXBuildFile; productRef = E8EA9A3C22CFD0F0000CEE5E /* EC2 */; };
 /* End PBXBuildFile section */
@@ -44,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E82017AC22CA65F9000F381C /* EC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2.swift; sourceTree = "<group>"; };
 		E82017AF22CB1FA4000F381C /* EC2Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Instance.swift; sourceTree = "<group>"; };
 		E836446822D619F50026D80C /* EC2Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Screen.swift; sourceTree = "<group>"; };
 		E836446A22D61A1A0026D80C /* EC2InstanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2InstanceView.swift; sourceTree = "<group>"; };
@@ -66,6 +66,8 @@
 		E8B287C522D2081B000B1BD5 /* EC2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2List.swift; sourceTree = "<group>"; };
 		E8B287C722D20937000B1BD5 /* InstanceStateName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceStateName.swift; sourceTree = "<group>"; };
 		E8B287CB22D209B7000B1BD5 /* EC2Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Store.swift; sourceTree = "<group>"; };
+		E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsScreen.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/SettingsScreen.swift; sourceTree = "<group>"; };
+		E8BBC2F222E6CE4000891237 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/HomeView.swift; sourceTree = "<group>"; };
 		E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,8 @@
 			children = (
 				E8B287C422D20800000B1BD5 /* EC2 */,
 				E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */,
+				E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */,
+				E8BBC2F222E6CE4000891237 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,7 +192,6 @@
 		E8B287C422D20800000B1BD5 /* EC2 */ = {
 			isa = PBXGroup;
 			children = (
-				E82017AC22CA65F9000F381C /* EC2.swift */,
 				E8B287C522D2081B000B1BD5 /* EC2List.swift */,
 				E836446822D619F50026D80C /* EC2Screen.swift */,
 				E836446A22D61A1A0026D80C /* EC2InstanceView.swift */,
@@ -333,17 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BBC2F122E6CCF500891237 /* SettingsScreen.swift in Sources */,
 				E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */,
 				E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */,
 				E836446922D619F50026D80C /* EC2Screen.swift in Sources */,
 				E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */,
 				E836446B22D61A1A0026D80C /* EC2InstanceView.swift in Sources */,
+				E8BBC2F322E6CE4000891237 /* HomeView.swift in Sources */,
 				E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */,
 				E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */,
 				E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */,
 				E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */,
 				E836446E22D62D470026D80C /* View.swift in Sources */,
-				E82017AD22CA65F9000F381C /* EC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

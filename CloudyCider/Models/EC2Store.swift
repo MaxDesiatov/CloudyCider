@@ -12,12 +12,12 @@ import EC2
 import SwiftUI
 
 final class EC2Store: BindableObject {
-  let didChange = PassthroughSubject<(), Never>()
+  let willChange = PassthroughSubject<(), Never>()
 
   var result: Result<[EC2Instance], Error> = .success([]) {
     didSet {
       DispatchQueue.main.async {
-        self.didChange.send()
+        self.willChange.send()
       }
     }
   }

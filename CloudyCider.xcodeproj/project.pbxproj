@@ -26,7 +26,7 @@
 		E8BBC2F322E6CE4000891237 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BBC2F222E6CE4000891237 /* HomeView.swift */; };
 		E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */; };
 		E8DF855422E88711007889E8 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = E8DF855322E88711007889E8 /* KeychainAccess */; };
-		E8DF855622E8A60A007889E8 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF855522E8A60A007889E8 /* Keychain.swift */; };
+		E8DF855622E8A60A007889E8 /* KeychainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF855522E8A60A007889E8 /* KeychainAPI.swift */; };
 		E8EA9A3D22CFD0F0000CEE5E /* EC2 in Frameworks */ = {isa = PBXBuildFile; productRef = E8EA9A3C22CFD0F0000CEE5E /* EC2 */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +73,7 @@
 		E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsScreen.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/SettingsScreen.swift; sourceTree = "<group>"; };
 		E8BBC2F222E6CE4000891237 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/HomeView.swift; sourceTree = "<group>"; };
 		E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		E8DF855522E8A60A007889E8 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Models/Keychain.swift; sourceTree = "<group>"; };
+		E8DF855522E8A60A007889E8 /* KeychainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeychainAPI.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Models/KeychainAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 				E82017AF22CB1FA4000F381C /* EC2Instance.swift */,
 				E8B287C722D20937000B1BD5 /* InstanceStateName.swift */,
 				E8B287CB22D209B7000B1BD5 /* EC2Store.swift */,
-				E8DF855522E8A60A007889E8 /* Keychain.swift */,
+				E8DF855522E8A60A007889E8 /* KeychainAPI.swift */,
 				E8A7565D22E9A3390033ACA2 /* UserSettings.swift */,
 			);
 			path = Models;
@@ -348,7 +348,7 @@
 			files = (
 				E8BBC2F122E6CCF500891237 /* SettingsScreen.swift in Sources */,
 				E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */,
-				E8DF855622E8A60A007889E8 /* Keychain.swift in Sources */,
+				E8DF855622E8A60A007889E8 /* KeychainAPI.swift in Sources */,
 				E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */,
 				E836446922D619F50026D80C /* EC2Screen.swift in Sources */,
 				E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */,

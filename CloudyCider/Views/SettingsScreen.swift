@@ -29,10 +29,10 @@ struct SettingsScreen: View {
         Text("Save")
       }
     }.onAppear {
-      if let accessKeyId = self.settings.keychainSettings.get(key: "accessKeyId") {
+      if let accessKeyId = self.settings.keychainAPI.get(key: .accessKeyId) {
         self.accessKeyId = accessKeyId
       }
-      if let secretAccessKey = self.settings.keychainSettings.get(key: "secretAccessKey") {
+      if let secretAccessKey = self.settings.keychainAPI.get(key: .secretAccessKey) {
         self.secretAccessKey = secretAccessKey
       }
     }

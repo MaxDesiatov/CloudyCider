@@ -27,15 +27,36 @@ struct HomeView: View {
 
 struct MobileView: View {
   var body: some View {
-    Text("Mobile View")
+    SettingsScreen()
   }
 }
 
 // MARK: - MacOS implementation
 
+struct DetailsView: View {
+  let message: String
+
+  var body: some View {
+    VStack {
+      Text(message)
+        .font(.largeTitle)
+    }
+  }
+}
+
 struct DesktopView: View {
+//  private let messages = [
+//    "Hello", "How are you?",
+//  ]
   var body: some View {
 //    EC2Screen(store: EC2Store())
     SettingsScreen()
+//    NavigationView {
+//      List(messages, id: \.self) { message in
+//        NavigationLink(destination: DetailsView(message: message)) {
+//          Text(message)
+//        }
+//      }.navigationBarTitle("Messages")
+//    }
   }
 }

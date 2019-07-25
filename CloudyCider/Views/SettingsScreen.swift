@@ -6,14 +6,35 @@
 //  Copyright © 2019 Matvii Hodovaniuk. All rights reserved.
 //
 
+import KeychainAccess
 import SwiftUI
 
 struct SettingsScreen: View {
-  @State private var name: String = ""
+  @EnvironmentObject var settings: UserSettings
+  @State var accessKeyId = ""
+  @State var secretAccessKey = ""
 
   var body: some View {
     Form {
-      TextField("Enter your name", text: $name)
+      Section(header: Text("Access Key ID")) {
+        TextField("Your ID", text: $accessKeyId)
+      }
+      Section(header: Text("Secret Access Key")) {
+        TextField("Your Key", text: $secretAccessKey)
+      }
+      Button(action: {
+        self.settings.accessKeyId = self.accessKeyId
+        self.settings.secretAccessKey = self.secretAccessKey
+      }) {
+        Text("Save")
+      }
+    }.onAppear {
+      if let accessKeyId = self.settings.keychainSettings.get(key: "accessKeyId") {
+        self.accessKeyId = accessKeyId
+      }
+      if let secretAccessKey = self.settings.keychainSettings.get(key: "secretAccessKey") {
+        self.secretAccessKey = secretAccessKey
+      }
     }
   }
 }

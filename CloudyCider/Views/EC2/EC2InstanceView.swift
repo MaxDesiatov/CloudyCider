@@ -14,7 +14,8 @@ struct EC2InstanceView: View {
   var body: some View {
     VStack {
       Text(instance.name)
-      Text(instance.status.description).color(instance.status.color)
+      Text(instance.status.description)
+        .foregroundColor(instance.status.color)
     }
   }
 }

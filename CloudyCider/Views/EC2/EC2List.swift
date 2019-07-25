@@ -23,7 +23,7 @@ struct EC2List: View {
           VStack(alignment: .leading) {
             Text(instance.name)
             Text(instance.status.description)
-              .color(instance.status.color)
+              .foregroundColor(instance.status.color)
           }
         }
       }.typeErased

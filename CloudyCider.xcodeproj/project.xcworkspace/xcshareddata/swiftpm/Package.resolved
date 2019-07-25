@@ -29,6 +29,15 @@
         }
       },
       {
+        "package": "KeychainAccess",
+        "repositoryURL": "https://github.com/kylinroc/KeychainAccess",
+        "state": {
+          "branch": "uikitformac",
+          "revision": "f3b8f29a01d3cd675fec1dfe9e0d45199a9a9985",
+          "version": null
+        }
+      },
+      {
         "package": "INIParser",
         "repositoryURL": "https://github.com/PerfectlySoft/Perfect-INIParser.git",
         "state": {

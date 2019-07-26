@@ -9,7 +9,7 @@
 import Combine
 import SwiftUI
 
-// The model for work with UserSetting, store and update.
+// The model for work with UserSettings, store and update.
 final class UserSettings: BindableObject {
   var willChange = PassthroughSubject<(), Never>()
 

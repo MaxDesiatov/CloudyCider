@@ -9,14 +9,14 @@
 import Combine
 import SwiftUI
 
-// The model for work with UserSettings, store and update.
+/// The model for work with UserSettings, store and update.
 final class UserSettings: BindableObject {
   var willChange = PassthroughSubject<(), Never>()
 
-  // Entity to work with Keychain inside UserSettings
+  /// Entity to work with Keychain inside UserSettings
   let keychainAPI = KeychainAPI()
 
-  // EC2 user accessKeyId. It is need to fetch data from EC2
+  /// EC2 user accessKeyId. It is need to fetch data from EC2
   var accessKeyId = "" {
     didSet {
       keychainAPI.set(key: .accessKeyId, value: accessKeyId)
@@ -24,7 +24,7 @@ final class UserSettings: BindableObject {
     }
   }
 
-  // EC2 user secretAccessKey. It is need to fetch data from EC2
+  /// EC2 user secretAccessKey. It is need to fetch data from EC2
   var secretAccessKey = "" {
     didSet {
       keychainAPI.set(key: .secretAccessKey, value: secretAccessKey)

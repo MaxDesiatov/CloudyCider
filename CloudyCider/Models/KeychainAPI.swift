@@ -8,15 +8,15 @@
 
 import KeychainAccess
 
-// The model for work with Keychain
+/// The model for work with Keychain
 final class KeychainAPI {
-  // The keychainAccess entity to make work with Keychain easily
+  /// The keychainAccess entity to make work with Keychain easily
   private let keychain: Keychain
 
-  // The service name
+  /// The service name
   private let service = "CloudyCider"
 
-  // The list of the settings key that will be stored in Keychain
+  /// The list of the settings key that will be stored in Keychain
   public enum SettingKey: String {
     case accessKeyId
     case secretAccessKey
@@ -26,7 +26,7 @@ final class KeychainAPI {
     keychain = Keychain(service: service)
   }
 
-  // The function to set the value in Keychain
+  /// This function is used to set the value in Keychain
   func set(key: SettingKey, value: String) {
     do {
       // Call set without remove will fire an update error
@@ -37,7 +37,7 @@ final class KeychainAPI {
     }
   }
 
-  // The function to get the value from Keychain
+  /// This function is used  to get the value from Keychain
   func get(key: SettingKey) -> String? {
     return keychain[key.rawValue]
   }

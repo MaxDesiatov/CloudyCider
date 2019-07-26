@@ -33,8 +33,24 @@ struct MobileView: View {
 
 // MARK: - MacOS implementation
 
+struct NavView: View {
+  @State var isPresented = false
+
+  var body: some View {
+    Button(action: { self.isPresented.toggle() }) { Text("Source View") }.sheet(isPresented: $isPresented, content: {
+      HStack {
+        Button(action: { self.isPresented.toggle() }) { Text("Source View") }
+      }
+      Text("Destination View")
+    })
+  }
+}
+
 struct DesktopView: View {
   var body: some View {
-    SettingsScreen()
+    VStack {
+      NavView()
+      SettingsScreen()
+    }
   }
 }

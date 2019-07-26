@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E82017AD22CA65F9000F381C /* EC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AC22CA65F9000F381C /* EC2.swift */; };
 		E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82017AF22CB1FA4000F381C /* EC2Instance.swift */; };
 		E836446922D619F50026D80C /* EC2Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836446822D619F50026D80C /* EC2Screen.swift */; };
 		E836446B22D61A1A0026D80C /* EC2InstanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836446A22D61A1A0026D80C /* EC2InstanceView.swift */; };
@@ -19,10 +18,15 @@
 		E8614F4622CA5BBD007732F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8614F4422CA5BBD007732F0 /* LaunchScreen.storyboard */; };
 		E8614F5122CA5BBD007732F0 /* CloudyCiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F5022CA5BBD007732F0 /* CloudyCiderTests.swift */; };
 		E8614F5C22CA5BBD007732F0 /* CloudyCiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8614F5B22CA5BBD007732F0 /* CloudyCiderUITests.swift */; };
+		E8A7565E22E9A3390033ACA2 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A7565D22E9A3390033ACA2 /* UserSettings.swift */; };
 		E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C522D2081B000B1BD5 /* EC2List.swift */; };
 		E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287C722D20937000B1BD5 /* InstanceStateName.swift */; };
 		E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287CB22D209B7000B1BD5 /* EC2Store.swift */; };
+		E8BBC2F122E6CCF500891237 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */; };
+		E8BBC2F322E6CE4000891237 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BBC2F222E6CE4000891237 /* HomeView.swift */; };
 		E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */; };
+		E8DF855422E88711007889E8 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = E8DF855322E88711007889E8 /* KeychainAccess */; };
+		E8DF855622E8A60A007889E8 /* KeychainAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF855522E8A60A007889E8 /* KeychainAPI.swift */; };
 		E8EA9A3D22CFD0F0000CEE5E /* EC2 in Frameworks */ = {isa = PBXBuildFile; productRef = E8EA9A3C22CFD0F0000CEE5E /* EC2 */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E82017AC22CA65F9000F381C /* EC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2.swift; sourceTree = "<group>"; };
 		E82017AF22CB1FA4000F381C /* EC2Instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Instance.swift; sourceTree = "<group>"; };
 		E836446822D619F50026D80C /* EC2Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Screen.swift; sourceTree = "<group>"; };
 		E836446A22D61A1A0026D80C /* EC2InstanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2InstanceView.swift; sourceTree = "<group>"; };
@@ -63,10 +66,14 @@
 		E8614F5B22CA5BBD007732F0 /* CloudyCiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyCiderUITests.swift; sourceTree = "<group>"; };
 		E8614F5D22CA5BBD007732F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8614F6922CA5BD4007732F0 /* CloudyCider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudyCider.entitlements; sourceTree = "<group>"; };
+		E8A7565D22E9A3390033ACA2 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSettings.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Models/UserSettings.swift; sourceTree = "<group>"; };
 		E8B287C522D2081B000B1BD5 /* EC2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2List.swift; sourceTree = "<group>"; };
 		E8B287C722D20937000B1BD5 /* InstanceStateName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceStateName.swift; sourceTree = "<group>"; };
 		E8B287CB22D209B7000B1BD5 /* EC2Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Store.swift; sourceTree = "<group>"; };
+		E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsScreen.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/SettingsScreen.swift; sourceTree = "<group>"; };
+		E8BBC2F222E6CE4000891237 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/HomeView.swift; sourceTree = "<group>"; };
 		E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		E8DF855522E8A60A007889E8 /* KeychainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeychainAPI.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Models/KeychainAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DF855422E88711007889E8 /* KeychainAccess in Frameworks */,
 				E8EA9A3D22CFD0F0000CEE5E /* EC2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +108,8 @@
 			children = (
 				E8B287C422D20800000B1BD5 /* EC2 */,
 				E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */,
+				E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */,
+				E8BBC2F222E6CE4000891237 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +120,8 @@
 				E82017AF22CB1FA4000F381C /* EC2Instance.swift */,
 				E8B287C722D20937000B1BD5 /* InstanceStateName.swift */,
 				E8B287CB22D209B7000B1BD5 /* EC2Store.swift */,
+				E8DF855522E8A60A007889E8 /* KeychainAPI.swift */,
+				E8A7565D22E9A3390033ACA2 /* UserSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,7 +200,6 @@
 		E8B287C422D20800000B1BD5 /* EC2 */ = {
 			isa = PBXGroup;
 			children = (
-				E82017AC22CA65F9000F381C /* EC2.swift */,
 				E8B287C522D2081B000B1BD5 /* EC2List.swift */,
 				E836446822D619F50026D80C /* EC2Screen.swift */,
 				E836446A22D61A1A0026D80C /* EC2InstanceView.swift */,
@@ -214,6 +225,7 @@
 			name = CloudyCider;
 			packageProductDependencies = (
 				E8EA9A3C22CFD0F0000CEE5E /* EC2 */,
+				E8DF855322E88711007889E8 /* KeychainAccess */,
 			);
 			productName = CloudyCider;
 			productReference = E8614F3622CA5BBC007732F0 /* CloudyCider.app */;
@@ -289,6 +301,7 @@
 			mainGroup = E8614F2D22CA5BBC007732F0;
 			packageReferences = (
 				E8EA9A3B22CFD0F0000CEE5E /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */,
+				E8DF855222E88710007889E8 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = E8614F3722CA5BBC007732F0 /* Products */;
 			projectDirPath = "";
@@ -333,17 +346,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BBC2F122E6CCF500891237 /* SettingsScreen.swift in Sources */,
 				E8B287C622D2081B000B1BD5 /* EC2List.swift in Sources */,
+				E8DF855622E8A60A007889E8 /* KeychainAPI.swift in Sources */,
 				E82017B022CB1FA4000F381C /* EC2Instance.swift in Sources */,
 				E836446922D619F50026D80C /* EC2Screen.swift in Sources */,
 				E8614F3A22CA5BBC007732F0 /* AppDelegate.swift in Sources */,
 				E836446B22D61A1A0026D80C /* EC2InstanceView.swift in Sources */,
+				E8BBC2F322E6CE4000891237 /* HomeView.swift in Sources */,
 				E8B287C822D20937000B1BD5 /* InstanceStateName.swift in Sources */,
 				E8614F3C22CA5BBC007732F0 /* SceneDelegate.swift in Sources */,
 				E8B287CC22D209B7000B1BD5 /* EC2Store.swift in Sources */,
+				E8A7565E22E9A3390033ACA2 /* UserSettings.swift in Sources */,
 				E8BFEBA722D51AAC00DC6AFA /* ErrorView.swift in Sources */,
 				E836446E22D62D470026D80C /* View.swift in Sources */,
-				E82017AD22CA65F9000F381C /* EC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,10 +525,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudyCider/CloudyCider.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "CloudyCider/Preview\\ Content";
-				DEVELOPMENT_TEAM = H4Z9Z4RD2G;
+				DEVELOPMENT_TEAM = 7T79S25KM8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CloudyCider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -521,6 +539,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dsl.CloudyCider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,10 +552,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudyCider/CloudyCider.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "CloudyCider/Preview\\ Content";
-				DEVELOPMENT_TEAM = H4Z9Z4RD2G;
+				DEVELOPMENT_TEAM = 7T79S25KM8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CloudyCider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -544,6 +566,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dsl.CloudyCider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SUPPORTS_UIKITFORMAC = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -674,6 +698,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E8DF855222E88710007889E8 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylinroc/KeychainAccess";
+			requirement = {
+				branch = uikitformac;
+				kind = branch;
+			};
+		};
 		E8EA9A3B22CFD0F0000CEE5E /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/swift-aws/aws-sdk-appleos";
@@ -685,6 +717,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E8DF855322E88711007889E8 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8DF855222E88710007889E8 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		E8EA9A3C22CFD0F0000CEE5E /* EC2 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E8EA9A3B22CFD0F0000CEE5E /* XCRemoteSwiftPackageReference "aws-sdk-appleos" */;

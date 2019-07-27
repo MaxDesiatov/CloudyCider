@@ -22,11 +22,7 @@ final class EC2Store: BindableObject {
     }
   }
 
-  func loadPage() {
-    // MARK: - EC2Init
-
-    let accessKeyId = ProcessInfo.processInfo.environment["accessKeyId"]
-    let secretAccessKey = ProcessInfo.processInfo.environment["secretAccessKey"]
+  func loadPage(accessKeyId: String, secretAccessKey: String) {
     let ec2 = EC2(
       accessKeyId: accessKeyId,
       secretAccessKey: secretAccessKey,

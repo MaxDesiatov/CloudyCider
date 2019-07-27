@@ -38,7 +38,7 @@ final class KeychainAPI {
   }
 
   /// This function is used  to get the value from Keychain
-  func get(key: SettingKey) -> String? {
-    return keychain[key.rawValue]
+  func get(key: SettingKey) throws -> String? {
+    return try keychain.get(key.rawValue)
   }
 }

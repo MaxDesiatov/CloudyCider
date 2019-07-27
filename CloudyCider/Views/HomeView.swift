@@ -36,21 +36,27 @@ struct MobileView: View {
 struct NavView: View {
   @State var isPresented = false
 
+  // The environment object is reachable only with explicit passing to SettingsScreen.
+  // This might be because of SettingsScreen position inside modal.
+  @EnvironmentObject var settings: UserSettings
+
   var body: some View {
     Button(action: { self.isPresented.toggle() }) { Text("Source View") }.sheet(isPresented: $isPresented, content: {
       HStack {
         Button(action: { self.isPresented.toggle() }) { Text("Source View") }
       }
-      Text("Destination View")
+      SettingsScreen().environmentObject(self.settings)
     })
   }
 }
 
 struct DesktopView: View {
+  @EnvironmentObject var settings: UserSettings
+
   var body: some View {
     VStack {
       NavView()
-      SettingsScreen()
+      EC2Screen(store: EC2Store()).environmentObject(self.settings)
     }
   }
 }

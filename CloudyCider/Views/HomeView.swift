@@ -41,9 +41,13 @@ struct NavView: View {
   @EnvironmentObject var settings: UserSettings
 
   var body: some View {
-    Button(action: { self.isPresented.toggle() }) { Text("Source View") }.sheet(isPresented: $isPresented, content: {
+    Button(action: { self.isPresented.toggle() }) {
+      Text("Settings")
+    }.sheet(isPresented: $isPresented, content: {
       HStack {
-        Button(action: { self.isPresented.toggle() }) { Text("Source View") }
+        Button(action: { self.isPresented.toggle() }) {
+          Text("Close")
+        }
       }
       SettingsScreen().environmentObject(self.settings)
     })

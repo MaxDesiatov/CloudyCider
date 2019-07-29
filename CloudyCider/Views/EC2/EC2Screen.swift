@@ -9,15 +9,9 @@
 import SwiftUI
 
 struct EC2Screen: View {
-  @EnvironmentObject var settings: UserSettings
-  @ObjectBinding var store: EC2Store
+  @EnvironmentObject var ec2Store: EC2Store
 
   var body: some View {
-    EC2List(result: store.result).onAppear {
-      self.store.loadPage(
-        accessKeyId: self.settings.accessKeyId,
-        secretAccessKey: self.settings.secretAccessKey
-      )
-    }
+    EC2List(result: ec2Store.result)
   }
 }

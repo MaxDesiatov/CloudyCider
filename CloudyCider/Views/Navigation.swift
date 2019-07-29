@@ -9,11 +9,14 @@
 import SwiftUI
 
 struct NavView: View {
-  @State var isPresented = false
-
   // The environment object is reachable only with explicit passing to SettingsScreen.
   // This might be because of SettingsScreen position inside modal.
   @EnvironmentObject var settings: UserSettings
+  @EnvironmentObject var ec2Store: EC2Store
+
+  // TOFIX: setting form should be opened if at least one key isn't presented
+  // @State var isPresented = settings.accessKeyId.isEmpty || settings.secretAccessKey.isEmpty
+  @State var isPresented = false
 
   var body: some View {
     HStack(alignment: .center) {
@@ -24,7 +27,9 @@ struct NavView: View {
           Button(action: { self.isPresented.toggle() }) {
             Image(systemName: "multiply.circle")
           }.padding(.init(top: 10, leading: 0, bottom: 0, trailing: 10))
-          SettingsScreen().environmentObject(self.settings)
+          SettingsScreen()
+            .environmentObject(self.settings)
+            .environmentObject(self.ec2Store)
         }
       })
     }.frame(width: 15, height: 15)

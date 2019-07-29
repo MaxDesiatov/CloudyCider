@@ -11,6 +11,7 @@ import SwiftUI
 
 struct SettingsScreen: View {
   @EnvironmentObject var settings: UserSettings
+  @EnvironmentObject var ec2Store: EC2Store
   @State var accessKeyId = ""
   @State var secretAccessKey = ""
 
@@ -25,6 +26,8 @@ struct SettingsScreen: View {
       Button(action: {
         self.settings.accessKeyId = self.accessKeyId
         self.settings.secretAccessKey = self.secretAccessKey
+
+        self.ec2Store.loadPage(accessKeyId: self.settings.accessKeyId, secretAccessKey: self.settings.secretAccessKey)
       }) {
         Text("Save")
       }
@@ -36,6 +39,10 @@ struct SettingsScreen: View {
         if let secretAccessKey = try self.settings.keychainAPI.get(key: .secretAccessKey) {
           self.secretAccessKey = secretAccessKey
         }
+        self.ec2Store.loadPage(
+          accessKeyId: self.settings.accessKeyId,
+          secretAccessKey: self.settings.secretAccessKey
+        )
       } catch {
         print(error)
       }

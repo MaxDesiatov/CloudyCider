@@ -27,7 +27,7 @@ struct HomeView: View {
 
 struct MobileView: View {
   var body: some View {
-    SettingsScreen()
+    Text("")
   }
 }
 
@@ -35,6 +35,7 @@ struct MobileView: View {
 
 struct DesktopView: View {
   @EnvironmentObject var settings: UserSettings
+  @EnvironmentObject var ec2Store: EC2Store
 
   var body: some View {
     VStack(alignment: .leading) {
@@ -42,15 +43,26 @@ struct DesktopView: View {
         Spacer()
         NavView().padding(.init(top: 10, leading: 0, bottom: 0, trailing: 10))
       }
-      Spacer()
       HStack(alignment: .bottom) {
-        Spacer()
-        EC2Screen(store: EC2Store())
+        EC2Screen()
           .environmentObject(self.settings)
+          .environmentObject(self.ec2Store)
           .padding(.init(top: 0, leading: 10, bottom: 10, trailing: 10))
-        Spacer()
       }
       Spacer()
+    }.onAppear {
+      do {
+        // optimize code that will fetch data on init
+        if let accessKeyId = try self.settings.keychainAPI.get(key: .accessKeyId),
+          let secretAccessKey = try self.settings.keychainAPI.get(key: .secretAccessKey) {
+          self.ec2Store.loadPage(
+            accessKeyId: accessKeyId,
+            secretAccessKey: secretAccessKey
+          )
+        }
+      } catch {
+        print(error)
+      }
     }
   }
 }

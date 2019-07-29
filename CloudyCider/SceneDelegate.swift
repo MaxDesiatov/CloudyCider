@@ -30,10 +30,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // Init User Settings
     let settings = UserSettings()
+    let ec2Store = EC2Store()
 
     let controller = UIHostingController(
       rootView: HomeView()
         .environmentObject(settings)
+        .environmentObject(ec2Store)
     )
     window.rootViewController = controller
 

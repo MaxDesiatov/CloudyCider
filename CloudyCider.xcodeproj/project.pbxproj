@@ -66,14 +66,14 @@
 		E8614F5B22CA5BBD007732F0 /* CloudyCiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudyCiderUITests.swift; sourceTree = "<group>"; };
 		E8614F5D22CA5BBD007732F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8614F6922CA5BD4007732F0 /* CloudyCider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudyCider.entitlements; sourceTree = "<group>"; };
-		E8A7565D22E9A3390033ACA2 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSettings.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Models/UserSettings.swift; sourceTree = "<group>"; };
+		E8A7565D22E9A3390033ACA2 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		E8B287C522D2081B000B1BD5 /* EC2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2List.swift; sourceTree = "<group>"; };
 		E8B287C722D20937000B1BD5 /* InstanceStateName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceStateName.swift; sourceTree = "<group>"; };
 		E8B287CB22D209B7000B1BD5 /* EC2Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EC2Store.swift; sourceTree = "<group>"; };
-		E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsScreen.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/SettingsScreen.swift; sourceTree = "<group>"; };
-		E8BBC2F222E6CE4000891237 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Views/HomeView.swift; sourceTree = "<group>"; };
+		E8BBC2F022E6CCF500891237 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		E8BBC2F222E6CE4000891237 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E8BFEBA622D51AAC00DC6AFA /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		E8DF855522E8A60A007889E8 /* KeychainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KeychainAPI.swift; path = ../../../../../../System/Volumes/Data/Users/matviihodovaniuk/Documents/CloudyCider/CloudyCider/Models/KeychainAPI.swift; sourceTree = "<group>"; };
+		E8DF855522E8A60A007889E8 /* KeychainAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

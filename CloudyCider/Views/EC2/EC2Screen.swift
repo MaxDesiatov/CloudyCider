@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct EC2Screen: View {
-  @ObjectBinding var store: EC2Store
+  @ObservedObject var store: EC2Store
 
   var body: some View {
     EC2List(result: store.result).onAppear {

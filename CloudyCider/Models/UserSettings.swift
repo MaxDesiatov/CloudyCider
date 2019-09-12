@@ -10,7 +10,7 @@ import Combine
 import SwiftUI
 
 /// The model for work with UserSettings, store and update.
-final class UserSettings: BindableObject {
+final class UserSettings: ObservableObject {
   var willChange = PassthroughSubject<(), Never>()
 
   /// Entity to work with Keychain inside UserSettings

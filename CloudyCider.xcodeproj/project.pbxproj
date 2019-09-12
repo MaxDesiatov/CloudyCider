@@ -530,14 +530,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "CloudyCider/Preview\\ Content";
-				DEVELOPMENT_TEAM = 7T79S25KM8;
+				DEVELOPMENT_TEAM = H4Z9Z4RD2G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CloudyCider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dsl.CloudyCider;
+				PRODUCT_BUNDLE_IDENTIFIER = digitalsignal.CloudyCider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -557,14 +557,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_UIKITFORMAC_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "CloudyCider/Preview\\ Content";
-				DEVELOPMENT_TEAM = 7T79S25KM8;
+				DEVELOPMENT_TEAM = H4Z9Z4RD2G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CloudyCider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dsl.CloudyCider;
+				PRODUCT_BUNDLE_IDENTIFIER = digitalsignal.CloudyCider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";

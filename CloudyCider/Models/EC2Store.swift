@@ -11,7 +11,7 @@ import Combine
 import EC2
 import SwiftUI
 
-final class EC2Store: BindableObject {
+final class EC2Store: ObservableObject {
   let willChange = PassthroughSubject<(), Never>()
 
   var result: Result<[EC2Instance], Error> = .success([]) {
